@@ -1,0 +1,36 @@
+{
+  "collection": "audit",
+  "fields": [
+    {
+      "fieldName": "id",
+      "type": "Reference",
+      "required": true,
+      "description": "Reference to affected document"
+    },
+    {
+      "fieldName": "userId",
+      "type": "Integer",
+      "required": false,
+      "description": "UID of user who performed action"
+    },
+    {
+      "fieldName": "name",
+      "type": "String",
+      "required": true,
+      "description": "Name of user who performed action"
+    },
+    {
+      "fieldName": "action",
+      "type": "String",
+      "required": true,
+      "description": "Action performed (e.g., \"Updated Contract\")"
+    },
+    {
+      "fieldName": "timestamp",
+      "type": "DateTime",
+      "required": true,
+      "description": "When action occurred (server timestamp)"
+    }
+  ]
+}
+

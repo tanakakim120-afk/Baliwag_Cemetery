@@ -1,0 +1,30 @@
+{
+  "collection": "transactions",
+  "fields": [
+    {
+      "fieldName": "uID",
+      "type": "String",
+      "required": true,
+      "description": "User ID who made the payment"
+    },
+    {
+      "fieldName": "timestamp",
+      "type": "DateTime",
+      "required": true,
+      "description": "Date and time of transaction"
+    },
+    {
+      "fieldName": "amount",
+      "type": "Integer",
+      "required": true,
+      "description": "Payment amount"
+    },
+    {
+      "fieldName": "tld",
+      "type": "String",
+      "required": true,
+      "description": "Total lot/niche details"
+    }
+  ]
+}
+

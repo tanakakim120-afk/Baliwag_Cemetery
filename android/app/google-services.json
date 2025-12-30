@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "881264200419",
+    "project_id": "tomb-nav-30luyb",
+    "storage_bucket": "tomb-nav-30luyb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881264200419:android:89f149dcd215d016b013d6",
+        "android_client_info": {
+          "package_name": "com.mycompany.tombnav"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2i_aWnqfyVADIIQqMGOn1qpY6uRwPW6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

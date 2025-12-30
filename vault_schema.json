@@ -1,0 +1,72 @@
+{
+  "collection": "vault",
+  "fields": [
+    {
+      "fieldName": "deceasedid",
+      "type": "Integer",
+      "required": true,
+      "description": "Unique deceased identifier (auto-increment)"
+    },
+    {
+      "fieldName": "deceasedname",
+      "type": "Array<String>",
+      "required": true,
+      "description": "Names of deceased (2-100 chars each)"
+    },
+    {
+      "fieldName": "deceaseddateofdeath",
+      "type": "DateTime",
+      "required": false,
+      "description": "Primary date of death"
+    },
+    {
+      "fieldName": "deceasedburialinterment",
+      "type": "Array<DateTime>",
+      "required": false,
+      "description": "Array of death dates (for multiple deceased)"
+    },
+    {
+      "fieldName": "deceasedburialinterment",
+      "type": "Array<DateTime>",
+      "required": false,
+      "description": "Burial/interment dates"
+    },
+    {
+      "fieldName": "applicantname",
+      "type": "Array<String>",
+      "required": true,
+      "description": "Names of applicants/family members"
+    },
+    {
+      "fieldName": "applicantaddress",
+      "type": "Array<String>",
+      "required": true,
+      "description": "Addresses of applicants"
+    },
+    {
+      "fieldName": "applicantcontactnumber",
+      "type": "Array<Integer>",
+      "required": true,
+      "description": "Contact numbers (9 digits each)"
+    },
+    {
+      "fieldName": "status",
+      "type": "String",
+      "required": true,
+      "description": "Vault status: \"Occupied\", \"Reserved\""
+    },
+    {
+      "fieldName": "timestamp",
+      "type": "DateTime",
+      "required": true,
+      "description": "Creation date as string (MM/DD/YYYY)"
+    },
+    {
+      "fieldName": "vaultID",
+      "type": "Reference",
+      "required": true,
+      "description": "Self-reference to this vault document"
+    }
+  ]
+}
+

@@ -1,0 +1,159 @@
+{
+  "collection": "contract",
+  "fields": [
+    {
+      "fieldName": "contractID",
+      "type": "Integer",
+      "required": true,
+      "description": "Unique contract identifier (auto increment)"
+    },
+    {
+      "fieldName": "type",
+      "type": "String",
+      "required": true,
+      "description": "Contract type: Lot or Nitche"
+    },
+    {
+      "section": "LEESSEE INFORMATION"
+    },
+    {
+      "section": "APPLICANT INFORMATION"
+    },
+    {
+      "fieldName": "applicantName",
+      "type": "Array<String>",
+      "required": true,
+      "description": "List of applicant full names (2-50 chars each)"
+    },
+    {
+      "fieldName": "applicantAddress",
+      "type": "Array<String>",
+      "required": true,
+      "description": "List of applicant addresses (5+ chars each)"
+    },
+    {
+      "fieldName": "applicantContactNumber",
+      "type": "Array<String>",
+      "required": true,
+      "description": "List of contact numbers (9 digits)"
+    },
+    {
+      "section": "DECEASED INFORMATION"
+    },
+    {
+      "fieldName": "decFullName",
+      "type": "Array<String>",
+      "required": true,
+      "description": "Full names of deceased persons"
+    },
+    {
+      "fieldName": "dateofdeath",
+      "type": "Array<DateTime>",
+      "required": true,
+      "description": "Dates of death for each deceased"
+    },
+    {
+      "fieldName": "burialinterment",
+      "type": "Array<DateTime>",
+      "required": true,
+      "description": "Burial/interment dates"
+    },
+    {
+      "section": "LOCATION DETAILS"
+    },
+    {
+      "fieldName": "Location",
+      "type": "String",
+      "required": false,
+      "description": "General location/section"
+    },
+    {
+      "fieldName": "street",
+      "type": "String",
+      "required": false,
+      "description": "Street/path within cemetery"
+    },
+    {
+      "fieldName": "measurement",
+      "type": "String",
+      "required": false,
+      "description": "Lot dimensions (e.g., '2m x 2m')"
+    },
+    {
+      "section": "CONTRACT DATES"
+    },
+    {
+      "fieldName": "dateEffective",
+      "type": "DateTime",
+      "required": true,
+      "description": "Contract start/effective date"
+    },
+    {
+      "fieldName": "dateofexpiration",
+      "type": "DateTime",
+      "required": true,
+      "description": "Contract expiration date"
+    },
+    {
+      "fieldName": "dateIssued",
+      "type": "DateTime",
+      "required": true,
+      "description": "Date contract was issued"
+    },
+    {
+      "fieldName": "dateadded",
+      "type": "DateTime",
+      "required": true,
+      "description": "Date record was added to system"
+    },
+    {
+      "section": "FINANCIAL INFORMATION"
+    },
+    {
+      "fieldName": "initialfee",
+      "type": "Integer",
+      "required": true,
+      "description": "Initial payment/down payment"
+    },
+    {
+      "fieldName": "balance",
+      "type": "Integer",
+      "required": true,
+      "description": "Total contract amount"
+    },
+    {
+      "section": "DOCUMENTS"
+    },
+    {
+      "fieldName": "OR",
+      "type": "String",
+      "required": true,
+      "description": "Official Receipt number"
+    },
+    {
+      "fieldName": "TIN",
+      "type": "String",
+      "required": true,
+      "description": "Tax Identification Number"
+    },
+    {
+      "fieldName": "ResidentCert",
+      "type": "String",
+      "required": true,
+      "description": "Resident Certificate number"
+    },
+    {
+      "fieldName": "placeIssued",
+      "type": "String",
+      "required": true,
+      "description": "Place where certificate was issued"
+    },
+    {
+      "fieldName": "proofoflease",
+      "type": "String",
+      "required": true,
+      "description": "URL/path to proof of lease document"
+    }
+  ]
+}
+

@@ -1,0 +1,45 @@
+{
+  "collection": "visitorlog",
+  "fields": [
+    {
+      "fieldName": "timestamp",
+      "type": "DateTime",
+      "required": true,
+      "description": "Date and time of visit"
+    },
+    {
+      "fieldName": "name",
+      "type": "String",
+      "required": true,
+      "description": "Visitor's full name (2-100 chars)"
+    },
+    {
+      "fieldName": "visitorid",
+      "type": "String",
+      "required": true,
+      "description": "Unique visitor identifier"
+    },
+    {
+      "fieldName": "phone_number",
+      "type": "Integer",
+      "required": true,
+      "description": "Visitor's contact number (11 digits)"
+    },
+    {
+      "section": "USER INFORMATION (IF REGISTERED)"
+    },
+    {
+      "fieldName": "display_name",
+      "type": "String",
+      "required": true,
+      "description": "Display name (for registered users)"
+    },
+    {
+      "fieldName": "created_time",
+      "type": "DateTime",
+      "required": true,
+      "description": "Record creation timestamp"
+    }
+  ]
+}
+

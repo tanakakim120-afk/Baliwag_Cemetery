@@ -3536,8 +3536,8 @@ class _BurialLotsListWidgetState extends State<BurialLotsListWidget> {
     if (match != null) {
       final width = int.tryParse(match.group(1) ?? '0') ?? 0;
       final height = int.tryParse(match.group(2) ?? '0') ?? 0;
-      if (width < 1 || height < 1) {
-        return 'Minimum measurement is 1x1';
+      if (width < 1 || height < 2) {
+        return 'Minimum measurement is 1x2';
       }
     }
     return null;
@@ -5540,8 +5540,8 @@ class _BurialLotsListWidgetState extends State<BurialLotsListWidget> {
                         if (match != null) {
                           final width = int.tryParse(match.group(1) ?? '0') ?? 0;
                           final height = int.tryParse(match.group(2) ?? '0') ?? 0;
-                          if (width < 1 || height < 1) {
-                            return 'Minimum measurement is 1x1';
+                          if (width < 1 || height < 2) {
+                            return 'Minimum measurement is 1x2';
                           }
                         }
                         return null;

@@ -121,7 +121,9 @@ class _NitchecontractFormCopyWidgetState
     // Set default value for ORN using app state qrcode
     _model.ornoTextController?.text = FFAppState().qrcode.isNotEmpty
         ? FFAppState().qrcode
-        : 'QR-${DateTime.now().millisecondsSinceEpoch.toString().substring(8)}';
+        : (_model.contractTypeValue == 'past' 
+            ? 'OR-${DateTime.now().millisecondsSinceEpoch.toString().substring(8)}' 
+            : 'QR-${DateTime.now().millisecondsSinceEpoch.toString().substring(8)}');
 
     // Set default value for date issued to current timestamp
     _model.dateissuedTextController?.text =
@@ -2332,9 +2334,15 @@ class _NitchecontractFormCopyWidgetState
                                 labelText: 'Official Receipt Number (OR)*',
                                 hintText: 'Enter OR Receipt Number',
                                 prefixIcon: Icons.receipt_rounded,
-                                validator: (context, value) =>
-                                    _validateRequired(
-                                        context, value, 'OR Number'),
+                                validator: (context, value) {
+                                  final required = _validateRequired(context, value, 'OR Number');
+                                  if (required != null) return required;
+                                  if ((_model.contractTypeValue ?? 'new') == 'past' && 
+                                      !value!.startsWith('OR-')) {
+                                    return 'OR number must start with "OR-" for existing contracts';
+                                  }
+                                  return null;
+                                },
                               ),
                               _buildFileUploadField(
                                 labelText: 'Proof of Lease*',

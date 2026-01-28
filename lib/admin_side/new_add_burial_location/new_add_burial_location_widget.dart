@@ -214,8 +214,8 @@ class _NewAddBurialLocationWidgetState
       final height = int.tryParse(matches.group(2) ?? '0') ?? 0;
       
       // Check minimum dimensions (1x1)
-      if (width < 1 || height < 1) {
-        return 'Minimum measurement is 1x1';
+      if (width < 1 || height < 2) {
+        return 'Minimum measurement is 1x2';
       }
     }
     

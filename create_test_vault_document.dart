@@ -42,7 +42,7 @@ Future<void> createTestVaultDocument() async {
 
     print('🔄 Document updated with vaultID reference');
   } catch (e) {
-    print('❌ Error creating test vault document: $e');
+    print('❌ Error  test vault document: $e');
   }
 }
 
@@ -143,4 +143,3 @@ void main() async {
 
   print('\n✅ Test completed!');
 }
-
